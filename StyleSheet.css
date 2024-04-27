@@ -1,0 +1,412 @@
+﻿/*mainpage*/
+.chezt {
+    width: 12%;
+    position: absolute;
+    top: 35vw;
+    animation-name: ss;
+    animation-duration: 4s;
+}
+@keyframes ss {
+    from {
+        opacity: 0.0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+p + .chezt {
+    left:5%;
+}
+.chezt + .chezt {
+    right: 5%;
+}
+h2 {
+    position: absolute;
+    top:-4vw;
+    margin-left: 2%;
+    font-size: 6vw;
+    color: #627b91;
+    font-family: Jokerman;
+}
+.con {
+    padding-top: 10%;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+h1 {
+    color: #627b91;
+    font-size: 11vw;
+    flex:1;
+}
+p {
+    font-family: cursive;
+    text-align: center;
+    color: #d3bccc;
+    font-size: 9vw;
+    margin-top: -1%;
+}
+div > p > label {
+    display: block;
+    margin-bottom: -10%;
+}
+p + p > label {
+    margin-top: -15%;
+}
+input {
+    margin: 5%;
+    border: none;
+    border-bottom: 2px #d3bccc solid;
+}
+p + button {
+    text-decoration-line: underline;
+    text-decoration-color: #d3bccc;
+    font-family: cursive;
+    font-size: 2vw;
+    background-color: transparent;
+
+}
+button {
+    color: #d3bccc;
+}
+p+p{
+    margin-bottom:-5vw;
+}
+
+/**/
+.a {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #d0dae3 50%, white 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.b {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+
+.c {
+    animation-duration: 5s;
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(25%);
+    }
+}
+/*עיצוב*/
+
+.bodyGame> img {
+    position: fixed;
+    width: 5%;
+    top: 9%;
+    right: 3%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: Jokerman;
+    /*cursor:crosshair;*/
+}
+.bodyGame {
+    color: #000000;
+    background-image: linear-gradient(120deg, white 75%, #d9e3ed 25%, #d0dae3 95%);
+    background-size: cover;
+    background-attachment: fixed;
+    animation-name: ss;
+    animation-duration: 4s;
+}
+
+aside {
+    z-index:1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1%;
+    border: solid 0.3vw #627b91;
+    border-radius: 2vw;
+    position: absolute;
+    width: 15%;
+    height: 65%;
+    top: 22%;
+    right: 5%;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    visibility: hidden;
+    background-color: white;
+}
+    aside > button {
+        height:15%;
+        font-size:1.3vw;
+        background-color:transparent;
+    }
+    aside > button:hover {
+        font-size:1.8vw;
+        
+    }
+.ret {
+    cursor: pointer;
+    color: #627b91;
+    font-family: cursive;
+    font-size: 2vw;
+    margin-bottom:60%;
+    margin-left: 40vw;
+}
+.btnJump {
+    right:0;
+    margin: 1vw;
+    background-color: transparent;
+    border: 1px solid #d3bccc;
+    border-radius:5px;
+    font-size:2vw;
+}
+@keyframes open_option {
+    0% {
+        right: -20%;
+        visibility:visible;
+    }
+
+    100% {
+        right: 5%;
+        visibility: visible;
+    }
+}
+
+@keyframes close_option {
+    0% {
+        right: 5%;
+        visibility: visible;
+    }
+
+    100% {
+        right: -20%;
+        visibility: visible;
+    }
+}
+
+body nav:first-child {
+    background-color: #465969;
+    width: 100%;
+    height: 20vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: white;
+    margin-left: -1%;
+    right: 0;
+    width: 200%;
+    height: 5vh;
+}
+body nav:last-of-type {
+    background-color: #d3bccc;
+    position: fixed;
+    bottom: 0;
+    height: 8%;
+    font-size: 22%;
+    color: black;
+    border-top: 2px white solid;
+}
+#_mainDiv {
+    height: 245px;
+    width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40vh;
+    display: flex;
+}
+
+._divNumber {
+    height: 100%;
+    width: 100%;
+    font-size:11vw;
+    margin-left:2vw;
+    line-height:120%;
+}
+
+
+
+    ._divNumber > div {
+        height: 4%;
+        width: 80%;
+        background-color: #d3bccc;
+    }
+
+        ._divNumber > div:hover {
+            opacity: 0.2;
+        }
+
+    ._divNumber > div {
+        border-top-right-radius: 70px;
+        border-bottom-left-radius: 70px;
+    }
+
+._inDiv2 {
+    transform: rotate(90deg);
+    margin-left: -45%;
+    margin-top: 40%;
+}
+
+._inDiv3 {
+    transform: rotate(90deg);
+    margin-left: -45%;
+    margin-top: 80%;
+}
+
+._inDiv4 {
+    margin-top: 40%;
+}
+
+._inDiv5 {
+    transform: rotate(90deg);
+    margin-left: 45%;
+    margin-top: -50%;
+}
+
+._inDiv6 {
+    transform: rotate(90deg);
+    margin-left: 45%;
+    margin-top: -92%;
+}
+
+._inDiv7 {
+    margin-top: 37%;
+}
+
+.divjump {
+    z-index:2;
+    position: absolute;
+    top: 5%;
+    text-align: center;
+    left: 20%;
+    width: 60%;
+    height: 70vh;
+    font-size: 450%;
+    font-weight: bold;
+    border-radius: 50px;
+    border: 2px solid #e0eaed;
+    top: 20%;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    background-color: white;
+}
+h3 {
+    margin-top: -5%;
+    font-size: 3vw;
+    color: #627b91;
+}
+label {
+    margin-top: 5vw;
+    font-family: cursive;
+    font-size: 2vw;
+    display: inline-block;
+    color: #d3bccc;
+}
+
+
+@keyframes open_divjump {
+    0% {
+        top: -5%;
+        transform:scale(0);
+    }
+
+    80% {
+        top: 20%;
+        transform:scale(1.2);
+    }
+    100% {
+        top: 20%;
+        transform: scale(1);
+    }
+}
+
+@keyframes close_divjump {
+    0% {
+        top: 20%;
+        transform: scale(1);
+       
+    }
+
+    80% {
+        top: 20%;
+        transform: scale(1.2);
+    }
+
+    100% {
+        top: -5%;
+        transform: scale(0);
+    }
+}
+
+button {
+    font-family: Jokerman;
+    border:none;
+}
+
+@keyframes wordJump {
+    0% {
+        line-height:normal;
+        transform: scale(0);
+    }
+
+    100% {
+        line-height:120%;
+        transform: scale(1);
+    }
+}
+
+
+@media only screen and (max-width: 1400px) {
+    #_mainDiv {
+        height: 145px;
+        width: 700px;
+    }
+}
+@media only screen and (max-width: 750px) {
+    #_mainDiv {
+        height: 100px;
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 750px) {
+    #_mainDiv {
+        height: 80px;
+        width: 500px;
+    }
+    aside{
+        font-size:12px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    #_mainDiv {
+        height: 60px;
+        width: 300px;
+    }
+    aside {
+        font-size: 12px;
+        width:20vw;
+    }
+}
